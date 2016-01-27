@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+   <body>
+      <div class="row">
+        <div class=" text-center col">
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-body">Select X or O </div>
+            <button type="button" id="x" data-dismiss="modal" aria-label="X">X<span aria-hidden"true">&times;</span></button>
+            <button type="button" id="o" data-dismiss="modal" area-label="0">O<span aria-hidden"true">&times;</span></button>
+          </div>
+          <table class="table borderless">
+            <tr id="row1">
+              <td id="block_0" class="square height"><i class="fa"></i></td>
+              <td id="block_1" class="square ver height"><i class="fa"></i></td>
+              <td id="block_2" class="square height"><i class="fa"></i></td>
+            </tr>
+            <tr id="row1">
+              <td id="block_3" class="square height"><i class="fa"></i></td>
+              <td id="block_4" class="square ver height"><i class="fa"></i></td>
+              <td id="block_5" class="square height"><i class="fa"></i></td>
+            </tr>
+            <tr id="row1">
+              <td id="block_6" class="square"><i class="fa"></i></td>
+              <td id="block_7" class="square ver"><i class="fa"></i></td>
+              <td id="block_8" class="square"><i class="fa"></i></td>
+            </tr>
+          </table>
+       </div>
+      </div>
+      <footer id="selection" class="footer">
+        <button type="button" id="comp">Computer</button> 
+        <button type="button" id="hum" data-toggle="modal" data-target="#myModal"> Human </button>
+      </footer>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script defer src="main.js"></script>
+   </body>
